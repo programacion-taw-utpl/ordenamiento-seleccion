@@ -7,8 +7,11 @@ public class PruebaOrdenamientoSeleccion
 {
    public static void main( String[] args )
    {
-      // crea objeto para realizar el ordenamiento por selecci�n
-      int[] valores = {10, 90, 1, 20, 4, 7};
+            
+      LeerArchivoTexto archivo = new LeerArchivoTexto();
+      archivo.abrirArchivo();
+      int[] valores = archivo.leerRegistros();
+      
       OrdenamientoSeleccion arregloOrden = new OrdenamientoSeleccion(valores);
       
       
